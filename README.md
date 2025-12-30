@@ -8,6 +8,11 @@ Atualmente só analisa com lexer
 - Comentarios com "#"
 - Identificadores, inteiros e strings
 
+## Dependencias
+- build-essential
+- make
+- gcc/clang
+
 ## Build
 
 simples
