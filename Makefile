@@ -33,7 +33,8 @@ SRC := \
 	   main.c \
 	   potato.c \
 	   util.c \
-	   lexer/token.c 
+	   lexer/token.c \
+	   lexer/lexer.c 
 
 SRC := $(addprefix $(SRCDIR)/,$(SRC))
 OBJ := $(patsubst $(SRCDIR)/%.c,$(OBJDIR)/%.o,$(SRC))
