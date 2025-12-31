@@ -4,6 +4,4 @@
  */
 #pragma once
 
-
-
 int runFile(int argc, char **argv);

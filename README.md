@@ -6,7 +6,7 @@ Uma simples linguagem de programação feita em C
 Atualmente só analisa com lexer
 
 - Comentarios com "#"
-- Identificadores, inteiros e strings
+- Identificadores, inteiros, floats, strings, operadores simples e compostos
 
 ## Dependencias
 - build-essential

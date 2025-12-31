@@ -1,0 +1,24 @@
+example.ptt content:
+# Code example
+1 + 1;
+11 and 1;
+Running: /home/matheus/projects/Potato/build/release/bin/potato --help:
+Usage: /home/matheus/projects/Potato/build/release/bin/potato [commands]
+[32mShort commands starts with '-'[0m
+[34mLong commands starts with '--'[0m
+Commands: 
+    [32m-v[0m | [34m--version[0m - [0mShow version of this program
+    [32m-r[0m | [34m--run-file[0m <FILE> - [0mRun a potato file
+    [32m-h[0m | [34m--help[0m - Show this message
+Running: /home/matheus/projects/Potato/build/release/bin/potato --version
+Potato v0.1
+Running: /home/matheus/projects/Potato/build/release/bin/potato --run-file example.ptt
+Token 0: type=1, lexeme='1', pos=(3,2)
+Token 1: type=8, lexeme='+', pos=(3,3)
+Token 2: type=1, lexeme='1', pos=(3,6)
+Token 3: type=4, lexeme=';', pos=(3,6)
+Token 4: type=1, lexeme='11', pos=(4,3)
+Token 5: type=24, lexeme='and', pos=(4,7)
+Token 6: type=1, lexeme='1', pos=(4,9)
+Token 7: type=4, lexeme=';', pos=(4,9)
+EOF

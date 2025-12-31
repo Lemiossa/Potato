@@ -5,7 +5,7 @@ VERSION := 0.1
 TARGET := potato
 
 CC ?= gcc
-CFLAGS := -std=c99 -Wall -Wextra -Werror
+CFLAGS := -std=c11 -Wall -Wextra -Werror
 DEFS := -DVERSION=\"$(VERSION)\"
 LIBS :=
 
@@ -34,7 +34,7 @@ SRC := \
 	   potato.c \
 	   util.c \
 	   lexer/token.c \
-	   lexer/lexer.c 
+	   lexer/lexer.c
 
 SRC := $(addprefix $(SRCDIR)/,$(SRC))
 OBJ := $(patsubst $(SRCDIR)/%.c,$(OBJDIR)/%.o,$(SRC))
@@ -46,7 +46,15 @@ clean:
 	rm -rf $(BUILDDIR)
 
 example: $(TARGETFILE)
-	$(TARGETFILE) --run-file example.ptt
+	@echo "example.ptt content:" > example.log
+	@cat example.ptt >> example.log
+	@echo "Running: $(TARGETFILE) --help:" >> example.log
+	@$(TARGETFILE) --help >> example.log
+	@echo "Running: $(TARGETFILE) --version" >> example.log
+	@$(TARGETFILE) --version >> example.log
+	@echo "Running: $(TARGETFILE) --run-file example.ptt" >> example.log
+	@$(TARGETFILE) --run-file example.ptt >> example.log
+	@cat example.log
 
 build: $(TARGETFILE)
 
