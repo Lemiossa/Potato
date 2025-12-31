@@ -3,8 +3,8 @@
  * Criado por Matheus Leme Da Silva
  */
 #pragma once
-#include <stddef.h>
 #include <stdbool.h>
+#include <stddef.h>
 
 typedef enum NodeType {
 	NODE_LITERAL_INTEGER,

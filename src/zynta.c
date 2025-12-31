@@ -1,5 +1,5 @@
 /**
- * potato.c
+ * zynta.c
  * Criado por Matheus Leme Da Silva
  */
 #include <errno.h>
@@ -14,7 +14,7 @@
 
 #include "parser/parser.h"
 
-#include "potato.h"
+#include "zynta.h"
 
 int run(char *content, size_t contentSize);
 int potatoProgramReturn = 0;
@@ -73,6 +73,7 @@ int run(char *content, size_t contentSize) {
 	Parser *parser = ParserCreate(tokens);
 
 	Node *ast = ParserParse(parser);
+	(void)ast;
 
 	ParserDestroy(parser);
 	LexerDestroy(lexer);

@@ -50,10 +50,12 @@ int ParserExpect(Parser *parser, TokenType type) {
 
 // Cria um novo Parser
 Parser *ParserCreate(TokenArray *tokens) {
-	if (!tokens) return NULL;
+	if (!tokens)
+		return NULL;
 
 	Parser *parser = (Parser *)malloc(sizeof(Parser));
-	if (!parser) return NULL;
+	if (!parser)
+		return NULL;
 
 	parser->pos = 0;
 	parser->tokens = tokens;
@@ -63,14 +65,16 @@ Parser *ParserCreate(TokenArray *tokens) {
 
 // Parsea um parser
 Node *ParserParse(Parser *parser) {
-	if (!parser) return NULL;
+	if (!parser)
+		return NULL;
 
 	return NULL;
 }
 
 // Destroi um Parser
 void ParserDestroy(Parser *parser) {
-	if (!parser) return;
+	if (!parser)
+		return;
 
 	free(parser);
 }

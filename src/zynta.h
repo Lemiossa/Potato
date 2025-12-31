@@ -1,5 +1,5 @@
 /**
- * potato.h
+ * zynta.h
  * Criado por Matheus Leme Da Silva
  */
 #pragma once
