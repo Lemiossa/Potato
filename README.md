@@ -1,4 +1,4 @@
-# Potato
+# Zynta
 
 Uma simples linguagem de programação feita em C
 
@@ -17,8 +17,8 @@ Atualmente só analisa com lexer
 
 simples
 ```bash
-git clone https://github.com/Lemiossa/Potato.git
-cd Potato
+git clone https://github.com/Lemiossa/Zynta.git
+cd Zynta
 make release # ou debug
 ```
 
@@ -27,7 +27,7 @@ O binário estará em: build/<release | debug>/bin/potato
 ## Uso
 
 ```bash
-./potato [comandos]
+./zynta [comandos]
 ```
 
 Comandos:

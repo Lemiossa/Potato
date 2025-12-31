@@ -17,7 +17,7 @@
 int showVersion(int argc, char **argv) {
 	(void)argc;
 	(void)argv;
-	printf("Potato v%s\n", VERSION);
+	printf("Zynta v%s\n", VERSION);
 	return 0;
 }
 

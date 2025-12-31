@@ -34,7 +34,8 @@ SRC := \
 	   potato.c \
 	   util.c \
 	   lexer/token.c \
-	   lexer/lexer.c
+	   lexer/lexer.c \
+	   parser/parser.c
 
 SRC := $(addprefix $(SRCDIR)/,$(SRC))
 OBJ := $(patsubst $(SRCDIR)/%.c,$(OBJDIR)/%.o,$(SRC))
@@ -47,12 +48,12 @@ clean:
 
 example: $(TARGETFILE)
 	@echo "example.ptt content:" > example.log
-	@cat example.ptt >> example.log
+	@cat example.zyn >> example.log
 	@echo "Running: $(TARGETFILE) --help:" >> example.log
 	@$(TARGETFILE) --help >> example.log
 	@echo "Running: $(TARGETFILE) --version" >> example.log
 	@$(TARGETFILE) --version >> example.log
-	@echo "Running: $(TARGETFILE) --run-file example.ptt" >> example.log
+	@echo "Running: $(TARGETFILE) --run-file example.zyn" >> example.log
 	@$(TARGETFILE) --run-file example.ptt >> example.log
 	@cat example.log
 

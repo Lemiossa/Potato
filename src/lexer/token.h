@@ -50,6 +50,11 @@ typedef enum TokenType {
 	TOKEN_LBRACKET, // [
 	TOKEN_RBRACKET, // ]
 
+	TOKEN_KEYWORD_TRUE, // True
+	TOKEN_KEYWORD_FALSE, // False
+
+	TOKEN_KEYWORD_NIL, // Nil
+
 	TOKEN_EOF // \0
 } TokenType;
 
